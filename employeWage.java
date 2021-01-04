@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class employeWage
 {
 	//Calculating wages till condition of total working hours or days per month reached
@@ -55,12 +56,41 @@ class employeeWage
                 if(res==isPresent)
                 {
                         System.out.println("Employee is present");
+=======
+class employeeWage
+{
+	//Check employee present or not and if present calculate its daily wage
+	public static void main(String[] args)
+	{
+		//variables
+                int isPresent=1;
+                int empRatePerHr=20;
+                int salary=0;
+                int empHr=0;
+		//computation
+                int res=(int)(Math.random()*10)%2;
+                //condition
+		if(res==isPresent)
+                {
+                        System.out.println("Employee is present");
+                        empHr=8;
+>>>>>>> 2_DailyemployeeWage_UC2
                 }
                 else
                 {
                         System.out.println("Employee is absent");
+<<<<<<< HEAD
                 }
 
 >>>>>>> 1_Emppresentorabsent_UC1
+=======
+                        empHr=0;
+                }
+		//final answer
+                salary=(empRatePerHr*empHr);
+		System.out.println("Salary is " +salary);		
+
+
+>>>>>>> 2_DailyemployeeWage_UC2
 	}
 }
