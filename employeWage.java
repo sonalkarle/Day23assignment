@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6_Tillreachedend_UC6
 public class employeWage
 {
 	//Calculating wages till condition of total working hours or days per month reached
@@ -46,6 +49,7 @@ public class employeWage
 		System.out.println("Total salary: "+totalsalary);
 
 				
+<<<<<<< HEAD
 =======
 class employeeWage
 {
@@ -125,6 +129,8 @@ class employeeWage
 		
 
 >>>>>>> 3_AddPartTime_UC3
+=======
+>>>>>>> 6_Tillreachedend_UC6
 	}
 =======
 
