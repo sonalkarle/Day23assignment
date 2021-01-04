@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class employeWage
 {
 	//Calculating wages till condition of total working hours or days per month reached
@@ -135,14 +136,33 @@ public class employeWage
         public static final int PART_TIME=2;
         public static final int EMP_RATE_PER_HR=20;
 
+=======
+public class employeWage
+{
+	//Calculating fulltime & parttime employee monthly wages using switch case
+     	//constant
+	public static final int FULL_TIME=1;
+        public static final int PART_TIME=2;
+        public static final int EMP_RATE_PER_HR=20;
+	public static final int NO_OF_WORKINGDAYS=2;
+>>>>>>> 5_WagesforMonth_UC5
 
         public static void main(String[] args)
         {
                 //variable
                 int empHr=0;
                 int salary=0;
+<<<<<<< HEAD
                 //Computation
                 int empCheck=(int)Math.floor(Math.random()*10)%3;
+=======
+		int totalsalary=0;
+                //Computation
+                int empCheck=(int)Math.floor(Math.random()*10)%3;
+		//loop
+		for(int day=0; day< NO_OF_WORKINGDAYS; day++)
+                {
+>>>>>>> 5_WagesforMonth_UC5
 		//condition
                 switch (empCheck) {
 
@@ -160,9 +180,21 @@ public class employeWage
 
                 }
                 salary=(empHr*EMP_RATE_PER_HR);
+<<<<<<< HEAD
                 System.out.println("Salary is "+salary);
         }
 >>>>>>> 4_UsingSwitchcase_UC4
 }
 
+=======
+		totalsalary+=salary;
+
+
+                System.out.println("Salary is "+salary);
+}
+		 System.out.println("Totalsalary is "+totalsalary);
+
+        }
+}
+>>>>>>> 5_WagesforMonth_UC5
 
