@@ -1,16 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6_Tillreachedend_UC6
+
+//6_Tillreachedend_UC6
 public class employeWage
 {
 	//Refactor the code for calculating monthly wage of fulltime & parttime employee
@@ -57,10 +46,6 @@ public class employeWage
 	{
 	computrEmpWage();
 
-<<<<<<< HEAD
-				
-<<<<<<< HEAD
-=======
 class employeeWage
 {
 	//Check employee is present or not
@@ -73,7 +58,7 @@ class employeeWage
                 if(res==isPresent)
                 {
                         System.out.println("Employee is present");
-=======
+
 class employeeWage
 {
 	//Check employee present or not and if present calculate its daily wage
@@ -91,16 +76,15 @@ class employeeWage
                 {
                         System.out.println("Employee is present");
                         empHr=8;
->>>>>>> 2_DailyemployeeWage_UC2
+//2_DailyemployeeWage_UC2
                 }
                 else
                 {
                         System.out.println("Employee is absent");
-<<<<<<< HEAD
+
                 }
 
->>>>>>> 1_Emppresentorabsent_UC1
-=======
+//1_Emppresentorabsent_UC1
                         empHr=0;
                 }
 		//final answer
@@ -108,8 +92,8 @@ class employeeWage
 		System.out.println("Salary is " +salary);		
 
 
->>>>>>> 2_DailyemployeeWage_UC2
-=======
+// 2_DailyemployeeWage_UC2
+
 class employeeWage
 {
 	//Add part time employee and add its daily wage
@@ -138,13 +122,13 @@ class employeeWage
                 }
 		
 
->>>>>>> 3_AddPartTime_UC3
-=======
->>>>>>> 6_Tillreachedend_UC6
-=======
->>>>>>> 7_Refactorcode_UC7
+// 3_AddPartTime_UC3
+
+// 6_Tillreachedend_UC6
+
+//7_Refactorcode_UC7
 	}
-=======
+
 
 public class employeWage
 {
@@ -154,7 +138,7 @@ public class employeWage
         public static final int PART_TIME=2;
         public static final int EMP_RATE_PER_HR=20;
 
-=======
+
 public class employeWage
 {
 	//Calculating fulltime & parttime employee monthly wages using switch case
@@ -163,24 +147,24 @@ public class employeWage
         public static final int PART_TIME=2;
         public static final int EMP_RATE_PER_HR=20;
 	public static final int NO_OF_WORKINGDAYS=2;
->>>>>>> 5_WagesforMonth_UC5
+// 5_WagesforMonth_UC5
 
         public static void main(String[] args)
         {
                 //variable
                 int empHr=0;
                 int salary=0;
-<<<<<<< HEAD
+
                 //Computation
                 int empCheck=(int)Math.floor(Math.random()*10)%3;
-=======
+
 		int totalsalary=0;
                 //Computation
                 int empCheck=(int)Math.floor(Math.random()*10)%3;
 		//loop
 		for(int day=0; day< NO_OF_WORKINGDAYS; day++)
                 {
->>>>>>> 5_WagesforMonth_UC5
+// 5_WagesforMonth_UC5
 		//condition
                 switch (empCheck) {
 
@@ -198,13 +182,13 @@ public class employeWage
 
                 }
                 salary=(empHr*EMP_RATE_PER_HR);
-<<<<<<< HEAD
+
                 System.out.println("Salary is "+salary);
         }
->>>>>>> 4_UsingSwitchcase_UC4
+// 4_UsingSwitchcase_UC4
 }
 
-=======
+
 		totalsalary+=salary;
 
 
@@ -213,7 +197,7 @@ public class employeWage
 		 System.out.println("Totalsalary is "+totalsalary);
 
         }
-=======
+
 public class employeWage
 {
 	//Compute employee wages for multiple companies
@@ -255,7 +239,7 @@ public class employeWage
 	{
 	computeEmpWage("Dmart",20,26,10);
 	computeEmpWage("Reliance",20,25,40);
-=======
+
 class empWage
 {
 	//calculating total wages for each company
@@ -321,13 +305,12 @@ class empWage
                 Realiance.computeWage();//calling funtion with the object
                 tcs.computeWage();//calling function with the object
                 
->>>>>>> 9_Totalwageformonth_UC9
+// 9_Totalwageformonth_UC9
 	}
 
->>>>>>> 8_Computeemployeewage_UC8
+//8_Computeemployeewage_UC8
 }
->>>>>>> 5_WagesforMonth_UC5
-=======
+//5_WagesforMonth_UC5
 class companyEmpWage
 {
 	//Ability to manage employee wages for mutiple company
@@ -381,7 +364,7 @@ public class employeWage
 		int empHrs=0;
 		int totalempHrs=0;
 		int totalworkingdays=0;
-=======
+
 interface companyEmployeewage
 {
         public void addCompanyEmpWage(String company,int wage_per_hr, int workday_in_months,int max_working_hrs);
@@ -393,30 +376,30 @@ class companyEmpWage
         //instance variables
         public static final int isFullTime=1;
         public static final int isPartTime=2;
-=======
+
 import java.util.ArrayList;
 class companyEmpWage
 {
         //instance variables  
->>>>>>> 12_ReafctorCompanieslist_UC12
+//12_ReafctorCompanieslist_UC12
         public String company;
         public int wage_per_hr;
         public int workday_in_months;
         public int max_working_hrs;
-<<<<<<< HEAD
+
 
         //constructor
-=======
+
         public int totalSalary;
 
        // constructor
->>>>>>> 12_ReafctorCompanieslist_UC12
+//12_ReafctorCompanieslist_UC12
         public companyEmpWage(String company, int wage_per_hr, int workday_in_months, int max_working_hrs)
         {
                 this.company= company;
                 this.wage_per_hr= wage_per_hr;
                 this.workday_in_months= workday_in_months;
-<<<<<<< HEAD
+
                 this.max_working_hrs= max_working_hrs;
         }
 }
@@ -447,7 +430,7 @@ public class employeWage implements companyEmployeewage
                 for(int i=0;i<num_of_company;i++)
                 {
                         computeWage(companyEmpWageArray[i]);
-=======
+
                 this.max_working_hrs= max_working_hrs;            
         }
         
@@ -485,39 +468,38 @@ public class employeWage
                         companyEmpWage companylist=companyEmpWageArray.get(i);//created object and getting companies with index position.
                         companylist.setTotalSalary(this.computeWage(companylist));
                         System.out.println(companylist);
->>>>>>> 12_ReafctorCompanieslist_UC12
+//12_ReafctorCompanieslist_UC12
                 }
         }
 
         //function to calculate salary for  employee
-<<<<<<< HEAD
+
         public void computeWage(companyEmpWage emp)
-=======
+
         private int computeWage(companyEmpWage companylist)
->>>>>>> 12_ReafctorCompanieslist_UC12
+// 12_ReafctorCompanieslist_UC12
         {
                 //local variables
                 int empHrs=0;
                 int totalempHrs=0;
                 int totalworkingdays=0;
-<<<<<<< HEAD
->>>>>>> 11_UsingInterfaceapproch_UC11
+
+// 11_UsingInterfaceapproch_UC11
 
                 //loop 
                 while(totalempHrs<=emp.max_working_hrs && totalworkingdays<=emp.workday_in_months)
                 {
-<<<<<<< HEAD
                         //condition
-=======
+
                         //switch case 
->>>>>>> 11_UsingInterfaceapproch_UC11
-=======
+// 11_UsingInterfaceapproch_UC11
+
 
                 //loop 
                 while(totalempHrs<=companylist.max_working_hrs && totalworkingdays<=companylist.workday_in_months)
                 {
                         //switch case 
->>>>>>> 12_ReafctorCompanieslist_UC12
+// 12_ReafctorCompanieslist_UC12
                         int empCheck=(int)(Math.floor(Math.random()*10)%3);
                         switch(empCheck)
                         {
@@ -535,29 +517,28 @@ public class employeWage
                         totalempHrs=totalempHrs+empHrs;
                         totalworkingdays++; 
                 }
-<<<<<<< HEAD
+
                         int TotalSalary= totalempHrs*emp.wage_per_hr; //Calculating total salary of employee
-<<<<<<< HEAD
+
 		
 			//printing totalsalary of different companies employee
-=======
+
 
                         //printing totalsalary of different companies employee
->>>>>>> 11_UsingInterfaceapproch_UC11
+// 11_UsingInterfaceapproch_UC11
                         System.out.println( "Total Employee Salary of " + emp.company +" is " + TotalSalary);
-=======
+
                     //Calculating total salary of employee
                         int totalSalary= totalempHrs*companylist.wage_per_hr; 
                         return totalSalary;
->>>>>>> 12_ReafctorCompanieslist_UC12
+// 12_ReafctorCompanieslist_UC12
         }
 
         //main method
         public static void main(String[] args)
         {
                 System.out.println("Welcome to Employee Wage Computation Program in Main branch");
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		employeWage ob=new employeWage();//created object for empWage class
                 ob.addCompanyEmpWage("Realiance",70,35,25);//calling funtion with the object
                 ob.addCompanyEmpWage("TCS",40,25,18);//calling function with the object
@@ -566,22 +547,22 @@ public class employeWage
 }
 }
 
->>>>>>> 10_manageempWageformulticompany_UC10
+// 10_manageempWageformulticompany_UC10
 
-=======
+
                 employeWage ob=new employeWage();//created object for empWage class
                 ob.addCompanyEmpWage("Realiance",80,65,85);
                 ob.addCompanyEmpWage("TCS",40,25,18);
                 
                 ob.computeEmpWage();
-=======
+
                 employeWage ob=new employeWage();//created object for empWage class
                 ob.addCompanyEmpWage("Realiance",50,35,25);
                 ob.addCompanyEmpWage("TCS",40,25,18);
                 
                 ob.computeEmpWage();//calling fucntion with the object
->>>>>>> 12_ReafctorCompanieslist_UC12
+// 12_ReafctorCompanieslist_UC12
         }
 }
 
->>>>>>> 11_UsingInterfaceapproch_UC11
+// 11_UsingInterfaceapproch_UC11
