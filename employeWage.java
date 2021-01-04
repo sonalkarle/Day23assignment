@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6_Tillreachedend_UC6
 public class employeWage
@@ -392,17 +393,30 @@ class companyEmpWage
         //instance variables
         public static final int isFullTime=1;
         public static final int isPartTime=2;
+=======
+import java.util.ArrayList;
+class companyEmpWage
+{
+        //instance variables  
+>>>>>>> 12_ReafctorCompanieslist_UC12
         public String company;
         public int wage_per_hr;
         public int workday_in_months;
         public int max_working_hrs;
+<<<<<<< HEAD
 
         //constructor
+=======
+        public int totalSalary;
+
+       // constructor
+>>>>>>> 12_ReafctorCompanieslist_UC12
         public companyEmpWage(String company, int wage_per_hr, int workday_in_months, int max_working_hrs)
         {
                 this.company= company;
                 this.wage_per_hr= wage_per_hr;
                 this.workday_in_months= workday_in_months;
+<<<<<<< HEAD
                 this.max_working_hrs= max_working_hrs;
         }
 }
@@ -433,16 +447,60 @@ public class employeWage implements companyEmployeewage
                 for(int i=0;i<num_of_company;i++)
                 {
                         computeWage(companyEmpWageArray[i]);
+=======
+                this.max_working_hrs= max_working_hrs;            
+        }
+        
+        public void setTotalSalary(int totalSalary)
+        {
+                this.totalSalary=totalSalary;
+        }
+        public String toString() //to return desire output 
+        {
+              return "Total employee wage for: " +company+ " is " +totalSalary;
+        }
+        	
+}
+//implementing interface
+public class employeWage
+{
+        public static final int isFullTime=1;
+        public static final int isPartTime=2;   
+        public ArrayList<companyEmpWage> companyEmpWageArray;//created arraylist
+        public employeWage()
+        {
+                companyEmpWageArray=new ArrayList<>();
+        }
+        //Adding companies in arrays
+        public void addCompanyEmpWage(String company, int wage_per_hr, int workday_in_months, int max_working_hrs)
+        {
+                companyEmpWage companylist=new companyEmpWage(company, wage_per_hr, workday_in_months, max_working_hrs);
+                companyEmpWageArray.add(companylist);
+        }
+        //calling computewage function and calculating empwage for every index
+        public void computeEmpWage()
+        {
+                for(int i=0;i<companyEmpWageArray.size();i++)
+                {
+                        companyEmpWage companylist=companyEmpWageArray.get(i);//created object and getting companies with index position.
+                        companylist.setTotalSalary(this.computeWage(companylist));
+                        System.out.println(companylist);
+>>>>>>> 12_ReafctorCompanieslist_UC12
                 }
         }
 
         //function to calculate salary for  employee
+<<<<<<< HEAD
         public void computeWage(companyEmpWage emp)
+=======
+        private int computeWage(companyEmpWage companylist)
+>>>>>>> 12_ReafctorCompanieslist_UC12
         {
                 //local variables
                 int empHrs=0;
                 int totalempHrs=0;
                 int totalworkingdays=0;
+<<<<<<< HEAD
 >>>>>>> 11_UsingInterfaceapproch_UC11
 
                 //loop 
@@ -453,6 +511,13 @@ public class employeWage implements companyEmployeewage
 =======
                         //switch case 
 >>>>>>> 11_UsingInterfaceapproch_UC11
+=======
+
+                //loop 
+                while(totalempHrs<=companylist.max_working_hrs && totalworkingdays<=companylist.workday_in_months)
+                {
+                        //switch case 
+>>>>>>> 12_ReafctorCompanieslist_UC12
                         int empCheck=(int)(Math.floor(Math.random()*10)%3);
                         switch(empCheck)
                         {
@@ -470,6 +535,7 @@ public class employeWage implements companyEmployeewage
                         totalempHrs=totalempHrs+empHrs;
                         totalworkingdays++; 
                 }
+<<<<<<< HEAD
                         int TotalSalary= totalempHrs*emp.wage_per_hr; //Calculating total salary of employee
 <<<<<<< HEAD
 		
@@ -479,12 +545,18 @@ public class employeWage implements companyEmployeewage
                         //printing totalsalary of different companies employee
 >>>>>>> 11_UsingInterfaceapproch_UC11
                         System.out.println( "Total Employee Salary of " + emp.company +" is " + TotalSalary);
+=======
+                    //Calculating total salary of employee
+                        int totalSalary= totalempHrs*companylist.wage_per_hr; 
+                        return totalSalary;
+>>>>>>> 12_ReafctorCompanieslist_UC12
         }
 
         //main method
         public static void main(String[] args)
         {
                 System.out.println("Welcome to Employee Wage Computation Program in Main branch");
+<<<<<<< HEAD
 <<<<<<< HEAD
 		employeWage ob=new employeWage();//created object for empWage class
                 ob.addCompanyEmpWage("Realiance",70,35,25);//calling funtion with the object
@@ -502,6 +574,13 @@ public class employeWage implements companyEmployeewage
                 ob.addCompanyEmpWage("TCS",40,25,18);
                 
                 ob.computeEmpWage();
+=======
+                employeWage ob=new employeWage();//created object for empWage class
+                ob.addCompanyEmpWage("Realiance",50,35,25);
+                ob.addCompanyEmpWage("TCS",40,25,18);
+                
+                ob.computeEmpWage();//calling fucntion with the object
+>>>>>>> 12_ReafctorCompanieslist_UC12
         }
 }
 
